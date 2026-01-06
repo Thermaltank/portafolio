@@ -1,0 +1,29 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+  {
+    date: "Noviembre 2024",
+    title: "Auxiliar de operaciones",
+    company: "CCSI",
+    description:
+      "Dar soporte de primer nivel a los usuarios internos (operadores, auxiliares, conductores en oficina) en temas como fallos de software operativo, acceso a sistemas o problemas básicos de hardware",
+  },
+  {
+    date: "mayo 2023",
+    title: "practicante de sistemas",
+    company: "HB y CIA ltda",
+    description:
+      "Colaborar en la instalación y configuración de sistemas operativos, programas de oficina y aplicaciones propias de la empresa (por ejemplo, software de tiquetes o control de flota).",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
